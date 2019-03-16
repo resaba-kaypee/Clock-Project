@@ -3,7 +3,7 @@ window.onload = function(){
     let date = new Date();
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let d = document.getElementById("day").innerHTML = days[date.getDay()];
-    let spans = document.getElementsByTagName("span");
+    let spans = document.querySelectorAll("#palette span");
     let h = date.getHours();
     let m =  date.getMinutes();
     let s = date.getSeconds();
